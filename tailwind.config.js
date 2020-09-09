@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         sapphire: '#263A7F',
         speech: '#3a59c2',
-        forest: '#263A7F',
+        forest: '#394783',
       },
     },
   },
