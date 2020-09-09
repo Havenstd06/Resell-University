@@ -10,6 +10,90 @@
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+<div class="relative overflow-hidden">
+  <div class="hidden md:block md:absolute md:bottom-0 lg:bottom-0 xl:bottom-12 md:h-full md:w-full">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#263A7F" fill-opacity="1" d="M0,288L48,266.7C96,245,192,203,288,176C384,149,480,139,576,154.7C672,171,768,213,864,218.7C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  </div>
+  <div x-data="{ open: false }" class="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+      <nav class="relative flex items-center md:justify-center">
+        <div class="flex items-center flex-1 md:space-x-10">
+          <div class="flex items-center justify-between w-full md:w-auto">
+            <a href="#" aria-label="Home">
+              <img class="hidden md:block md:h-14 md:w-auto md:h-16" src="img/ru-white-transparent-bg.png" alt="Logo">
+              <img class="md:hidden block h-10 w-auto h-12" src="img/ru-blue-transparent-bg.png" alt="Logo">
+            </a>
+            <div class="-mr-2 flex items-center md:hidden">
+              <button @click="open = true" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true" x-bind:aria-expanded="open">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="hidden md:flex md:space-x-10">
+            <a href="#" class="font-medium text-gray-200 hover:text-gray-50 transition duration-150 ease-in-out">Features</a>
+            <a href="#" class="font-medium text-gray-200 hover:text-gray-50 transition duration-150 ease-in-out">FAQ</a>
+            <a href="#" class="font-medium text-gray-200 hover:text-gray-50 transition duration-150 ease-in-out">Submit-A-Flip</a>
+          </div>
+        </div>
+        <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+          <span class="inline-flex rounded-lg">
+            <button type="button" class="inline-flex items-center px-8 py-2.5 rounded-full text-sm font-medium transition duration-150 ease-in-out leading-5 bg-sapphire text-gray-200 border border-gray-200 hover:bg-gray-200 hover:text-sapphire hover:border-sapphire">
+              Dashboard
+            </button>
+          </span>
+        </div>
+      </nav>
+    </div>
+
+    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" x-show="open" x-description="Mobile menu, show/hide based on menu open state." x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" style="display: none;">
+      <div class="rounded-lg shadow-md">
+        <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+          <div class="px-5 pt-4 flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="img/ru-blue-transparent-bg.png" alt="">
+            </div>
+            <div class="-mr-2">
+              <button @click="open = false" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="px-2 pt-2 pb-3">
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Features</a>
+            <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">FAQ</a>
+            <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Submit-A-Flip</a>
+          </div>
+          <div>
+            <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out" role="menuitem">
+              Dashboard
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="flex justify-center mx-auto max-w-screen-xl px-8 lg:px-6 xl:px-0 -mt-4">
+      <div class="flex items-center justify-center md:justify-start">
+        <div>
+          <h1 class="xl:text-6xl text-5xl font-bold text-forest leading-loose">We're Flippin'</h1>
+          <h2 class="xl:text-3xl text-2xl font-bold text-forest">Learn. Acquire. Profit.</h2>
+          <span class="inline-flex rounded-md shadow-sm mt-5">
+            <button type="button" class="inline-flex items-center px-10 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-sapphire hover:bg-speech focus:outline-none focus:border-indigo-700 active:bg-speech transition ease-in-out duration-150">
+              Sold Out | $50 P/M
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="hidden md:block" id="ru-bg">
+        <img class="w-11/12 " src="img/phone.png" alt="">
+      </div>
+    </main>
+  </div>
+</div>
 
     <!-- Script -->
     <script src="js/app.js"></script>
