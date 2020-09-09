@@ -1,0 +1,23 @@
+{
+  "name": "dominant-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "@tailwindcss/ui": "^0.6.0",
+    "alpinejs": "^2.5.0",
+    "autoprefixer": "^9.8.5",
+    "browserify": "^16.5.1",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.8.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "postcss css/app.css -o public/css/app.css && browserify js/app.js -o public/js/app.js",
+    "live": "cd public && live-server"
+  },
+  "keywords": [],
+  "author": "Thomas Drumont",
+  "license": "MIT"
+}
