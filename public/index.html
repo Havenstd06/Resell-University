@@ -11,10 +11,10 @@
 </head>
 <body>
 <div class="relative overflow-hidden">
-  <div class="hidden md:block md:absolute md:bottom-0 lg:bottom-0 xl:bottom-12 md:h-full md:w-full">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#263A7F" fill-opacity="1" d="M0,288L48,266.7C96,245,192,203,288,176C384,149,480,139,576,154.7C672,171,768,213,864,218.7C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  <div class="hidden md:block md:absolute md:h-full md:w-full">
+    <svg class="transform scale-150 xl:-translate-y-6 xl:translate-y-0 translate-y-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#263A7F" fill-opacity="1" d="M0,288L48,266.7C96,245,192,203,288,176C384,149,480,139,576,154.7C672,171,768,213,864,218.7C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
   </div>
-  <div x-data="{ open: false }" class="relative pt-6 lg:pt-10 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+  <div x-data="{ open: false }" class="relative pt-4 xl:pt-10 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
       <nav class="relative flex items-center md:justify-center">
         <div class="flex items-center flex-1 md:space-x-10">
@@ -76,9 +76,9 @@
       </div>
     </div>
 
-    <main class="flex justify-center mx-auto max-w-screen-xl px-8 lg:px-6 xl:px-0 -mt-4">
+    <main class="flex justify-center mx-auto xl:max-w-screen-xl pl-8 lg:pl-6 xl:pl-0 -mt-12">
       <div class="flex items-center justify-center md:justify-start">
-        <div>
+        <div class="w-74 md:w-full">
           <h1 class="xl:text-6xl text-5xl font-bold text-forest leading-loose">We're Flippin'</h1>
           <h2 class="xl:text-3xl text-2xl font-bold text-forest">Learn. Acquire. Profit.</h2>
           <span class="inline-flex rounded-md shadow-sm mt-5">
@@ -89,7 +89,7 @@
         </div>
       </div>
       <div class="hidden md:block" id="ru-bg">
-        <img class="w-11/12 " src="img/phone.png" alt="">
+        <img class="w-11/12" src="img/phone.png" alt="Phone">
       </div>
     </main>
   </div>

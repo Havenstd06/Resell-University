@@ -3,7 +3,7 @@ div#ru-bg::after {
     background-image: url(../img/ru-blue-transparent-bg.png);
     background-repeat: no-repeat;
     background-size: 35%;
-    background-position:75% 40%;
+    background-position: 75% 40%;
     opacity: 0.15;
     top: 0;
     left: 0;

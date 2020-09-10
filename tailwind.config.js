@@ -12,6 +12,9 @@ module.exports = {
         speech: '#3a59c2',
         forest: '#394783',
       },
+      width: {
+        74: '20rem'
+      }
     },
   },
   variants: {},
