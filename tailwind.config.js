@@ -11,10 +11,8 @@ module.exports = {
         sapphire: '#263A7F',
         speech: '#3a59c2',
         forest: '#394783',
+        space: '#3A477F',
       },
-      width: {
-        74: '20rem'
-      }
     },
   },
   variants: {},
