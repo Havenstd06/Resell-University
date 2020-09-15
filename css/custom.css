@@ -1,14 +1,33 @@
-div#ru-bg::after {
-    content: "";
-    background-image: url(../img/ru-blue-transparent-bg.png);
-    background-repeat: no-repeat;
-    background-size: 35%;
-    background-position: 75% 40%;
-    opacity: 0.15;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+@media (min-width: 768px) {
+        div#ru-bg::after {
+        content: "";
+        background-image: url(../img/ru-blue-transparent-bg.png);
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position: 75% 40%;
+        opacity: 0.15;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 767px) {
+    div#ru-bg::after {
+        content: "";
+        background-image: url(../img/ru-blue-transparent-bg.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: 57% 80%;
+        opacity: 0.15;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
 }

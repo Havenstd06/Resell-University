@@ -13,6 +13,9 @@ module.exports = {
         forest: '#394783',
         space: '#3A477F',
       },
+      width: {
+        40: "10rem"
+      },
     },
   },
   variants: {},
