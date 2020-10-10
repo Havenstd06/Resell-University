@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resell University</title>
-  
+
   <link rel="shortcut icon" href="favicon.ico">
   <!-- Style -->
   <link rel="stylesheet" href="css/app.css">
@@ -105,12 +105,12 @@
 <!--      <img src="img/credit.png" alt="credit">-->
     </div>
     <div class="flex justify-center items-center">
-      <a href="#" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="mr-2">
+      <a href="RU_TERMS_AND_CONDITION.pdf" target="_blank" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="mr-2">
         <i :class="{ 'invisible' : hover === false }" class="fas fa-balance-scale-right"></i>
         Terms
       </a>
-      &
-      <a href="#" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="ml-2">
+      <i class="fas fa-plus"></i>
+      <a href="RU_PRIVACY_POLICY.pdf" target="_blank" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="ml-2">
         Privacy
         <i :class="{ 'invisible' : hover === false }" class="fas fa-user-secret"></i>
       </a>
